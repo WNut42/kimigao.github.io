@@ -19,16 +19,15 @@ require "geminabox"
 
 Geminabox.data = "./data"
 run Geminabox
-
 ```
 
 * 如果需要给geminabox添加Http Basic Auth，可参考下面链接
 #### [https://github.com/geminabox/geminabox/wiki/Http-Basic-Auth](https://github.com/geminabox/geminabox/wiki/Http-Basic-Auth)
 
 * 执行如下命令启动gem server
+
 ```
 rackup
-
 ```
 
 默认端口为9292，则gem server地址为http://serverip:9292/。可以用rackup -p 80指定端口。
@@ -40,10 +39,13 @@ gem inabox -g http://username:password@serverdomain gemname
 ```
 
 * 例如：
-```
-安装actionmailer
-gem inabox actionmailer-3.2.2.gem -g http://username:password@serverdomain
 
-安装gems目录下所有gems
+安装actionmailer：
+```
+gem inabox actionmailer-3.2.2.gem -g http://username:password@serverdomain
+```
+
+安装gems目录下所有gems：
+```
 gem inabox gems/*  -g http://username:password@serverdomain
 ```
