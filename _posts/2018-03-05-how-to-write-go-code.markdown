@@ -321,20 +321,17 @@ func TestReverse(t *testing.T) {
 $ go test github.com/user/stringutil
 ok  	github.com/user/stringutil 0.165s
 ```
-
 如果是在包目录下，可以直接执行如下命令：
 
 ```shell
 $ go test
 ok  	github.com/user/stringutil 0.165s
 ```
-
 执行 `go help test` 或者查看 [testing 包文档](https://golang.org/pkg/testing/) 学习更多细节。
 
 ### 远程包
 
 导入路径可以描述怎样通过版本控制系统获取包源码，例如 Git。go tool 利用这个特性自动从远程仓库获取包源码。举个栗子，在这篇文档中的 examples 项目，Git 仓库就是存储在 GitHub 的 github.com/golang/example 地址上。
-
 如果你在包的导入路径中包含了仓库 URL，go get 将获取，编译和安装这个包：
 
 ```shell
@@ -344,7 +341,6 @@ Hello, Go examples!
 ```
 
 如果工作区中不存在指定的包，那 go get 命令将把包下载到 GOPATH 中定义的第一个工作区中。（如果在工作去中已经存在包，go get 将跳过从远程仓库获取，行为和 go install 相同）。
-
 在执行了上面 go get 命令后，工作区目录展示如下：
 
 ```shell
@@ -378,26 +374,18 @@ GitHub 上的 hello 命令依赖于同一个仓库的 stringutil 包。hello.go 
 import "github.com/golang/example/stringutil"
 ```
 
-
-
 这个特性可以方便的让你的 Go 包被其他人使用。[Go Wiki](https://github.com/golang/go/wiki/Projects) 和 [godoc.org](http://godoc.org/) 上列出了很多第三方 Go 项目。
-
 关于使用 go tool 来使用远程仓库的更多信息, 请参考: [go help importpath](http://golang.org/cmd/go/#hdr-Remote_import_paths)
 
 ### 下一步
 
 订阅 [golang-announce](https://groups.google.com/group/golang-announce) 邮件列表来获取 Go 的发布消息。
-
 查看  [Effective Go](https://golang.org/doc/effective_go.html) 来学习怎么书写简洁、地道的 Go 代码。
-
 通过 [A Tour of Go](http://tour.golang.org/welcome/1) 来完成一次 go 的旅行
-
 访问 [documentation page](http://golang.org/doc/#articles) 来了解一系列关于Go语言的有深度的文章, 以及 Go 库和工具.
 
 ### 获取帮助
 
 寻求实时帮助, 可以使用 [FreeNode](http://freenode.net/) 的IRC server #go-nuts
-
 Go 语言官方邮件列表 [Go Nuts](https://groups.google.com/forum/#!forum/golang-nuts)
-
 汇报 Go 语言的 bug 请使用 [Go issue tracker](http://golang.org/issue)
