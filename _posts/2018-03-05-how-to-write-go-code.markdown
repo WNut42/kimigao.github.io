@@ -42,28 +42,28 @@ go tool 会构建源包和安装作为结果的二进制文件到 `pkg` 和 `bin
 
 ```shell
 bin/
-    hello								# 可执行命令
-	outyet								# 可执行命令
+    hello                 # 可执行命令
+    outyet                # 可执行命令
 pkg/
     linux_amd64/
-    	github.com/golang/example
-			stringutil.a				# 包对象
+        github.com/golang/example
+        stringutil.a      # 包对象
 src/
     github.com/golang/example
-		.git/							# Git 仓库元数据
-    	hello/
-    		hello.go					# 命令源码
-		outyet/
-    		main.go						# 命令源码	
-			main_test.go				# 测试源码
-		stringutil/
-    		reverse.go					# 包源码
-			reverse_test.go				# 测试源码
-	golang.org/x/image/
-    	.git/							# Git 仓库元数据
-    	bmp/
-    		reader.go					# 包源码
-			writer.go					# 包源码
+        .git/             # Git 仓库元数据
+        hello/
+            hello.go      # 命令源码
+        outyet/
+            main.go       # 命令源码	
+            main_test.go  # 测试源码
+        stringutil/
+            reverse.go        # 包源码
+            reverse_test.go   # 测试源码
+        golang.org/x/image/
+            .git/             # Git 仓库元数据
+            bmp/
+                reader.go     # 包源码
+                writer.go     # 包源码
 	... (此处省略多个仓库和包)
 ```
 
@@ -137,7 +137,6 @@ $ go install github.com/user/hello
 ```
 
 注意：你可以在系统的任何位置执行这条命令。go 命令会通过 GOPATH 环境变量找到工作区，然后查找到工作区目录下的 github.com/user/hello 包下的源代码。
-
 如果你是在包目录下，可以忽略包路径，直接运行 go install 命令：
 
 ```shell
