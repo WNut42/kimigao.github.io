@@ -81,7 +81,7 @@ end
 - 创建外部表
 
 ```sql
-class CreateOssNotificationLogs < ActiveRecord::Migration[5.1]
+class CreateOssLogs < ActiveRecord::Migration[5.1]
   def up
     execute_sql = <<-SQL
       CREATE FOREIGN TABLE oss_logs (
