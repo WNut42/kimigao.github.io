@@ -12,6 +12,6 @@ categories: [PostgreSQL]
 
 - [PDF版]({{ "/assets/files/postgresql_mind_mapping.pdf" }})
 
-##### 参考文章：
+##### 参考链接：
 
 - [《PostgreSQL即学即用》](https://book.douban.com/subject/26694233/)
